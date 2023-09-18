@@ -12,6 +12,29 @@ for(let word in str){
     if(str[word]==" " || str[word]==","){
         continue;
     }
-    console.log(str[word]);
+    //console.log(str[word]);
 }
 
+const map=new Map()
+
+map.set('IN','India')
+map.set('USA','United State of America')
+map.set('UK','United Kingdom')
+map.set('BN','Bangadesh')
+
+for(const [key,value] of map){
+    //console.log(key,':-',value);
+}
+
+//console.log(map);
+
+const lang={
+    js:"Javascript",
+    cpp:"C++",
+    py:"Python",
+    rb:"Ruby"
+}
+
+for(const key in lang){
+    console.log(`${key} is short name for ${lang[key]}`);
+}
